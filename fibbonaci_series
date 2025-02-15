@@ -1,0 +1,13 @@
+int fib(int n) {
+    if (n<1){
+        return n;
+    }
+    int fibarr[n + 1];
+
+    fibarr[0] = 0;
+    fibarr[1] = 1;
+    for (int i = 2; i <= n; i++) {
+        fibarr[i] = fibarr[i - 1] + fibarr[i - 2];
+    }
+    return fibarr[n];
+}
