@@ -2,7 +2,6 @@ bool isMonotonic(int* nums, int numsSize) {
     bool dec=true;
     bool inc=true;
     for(int i=0;i<numsSize-1;i++){
-        if (nums[i]<nums[i+1]){
             dec=false;
         }
         if (nums[i]>nums[i+1]){
